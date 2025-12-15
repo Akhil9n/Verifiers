@@ -6,6 +6,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from core.parser import parse_and_decode
 from core.normalizer import normalize_url
 from core.resolver import resolve_redirects
+from core.canonicalize import canonicalize_redfin_url
 from verifiers.redfin import is_redfin_domain, classify_redfin_url
 from core.models import URLResolutionResult
 
@@ -23,6 +24,7 @@ def run(url: str) -> URLResolutionResult:
 
     is_internal = final_url and is_redfin_domain(final_url)
     classification = classify_redfin_url(parsed["path"])
+    canonical = canonicalize_redfin_url(url)
 
     result =  URLResolutionResult(
         original_url=url,
@@ -34,6 +36,7 @@ def run(url: str) -> URLResolutionResult:
         domain=urlparse(final_url).netloc if final_url else None,
         is_internal=is_internal,
         classification=classification,
+        canonical=canonical,
         errors=errors
     )
 
@@ -44,4 +47,3 @@ res = run("https://www.redfin.com")
 run("https://www.redfin.com/city/245/NY/Albany/newest-listings")
 run("https://www.redfin.com/mortgage-get-pre-approved?context=86&location_id=35948&location_type=2&spex_v=1")
 run("https://www.redfin.com/tours/checkout/contact?listingId=209901519&date=undefined&inquirySource=589&agentId=50490&epc=undefined&isRequestingForPartner=true")
-# print(json.dumps(res, indent=2))
