@@ -1,5 +1,5 @@
 
- Testing: https://www.redfin.com
+//  Testing: https://www.redfin.com
 {
   "original_url": "https://www.redfin.com",
   "normalized_url": "https://www.redfin.com/",
@@ -21,7 +21,7 @@
   "errors": []
 }
 
- Testing: https://www.redfin.com/houses-near-me
+//  Testing: https://www.redfin.com/houses-near-me
 {
   "original_url": "https://www.redfin.com/houses-near-me",
   "normalized_url": "https://www.redfin.com/houses-near-me",
@@ -43,7 +43,7 @@
   "errors": []
 }
 
- Testing: https://www.redfin.com/city/245/NY/Albany/newest-listings
+//  Testing: https://www.redfin.com/city/245/NY/Albany/newest-listings
 {
   "original_url": "https://www.redfin.com/city/245/NY/Albany/newest-listings",
   "normalized_url": "https://www.redfin.com/city/245/NY/Albany/newest-listings",
@@ -70,7 +70,7 @@
   "errors": []
 }
 
- Testing: https://www.redfin.com/mortgage-get-pre-approved?context=86&location_id=35948&location_type=2&spex_v=1
+//  Testing: https://www.redfin.com/mortgage-get-pre-approved?context=86&location_id=35948&location_type=2&spex_v=1
 {
   "original_url": "https://www.redfin.com/mortgage-get-pre-approved?context=86&location_id=35948&location_type=2&spex_v=1",
   "normalized_url": "https://www.redfin.com/mortgage-get-pre-approved",
@@ -92,7 +92,7 @@
   "errors": []
 }
 
- Testing: https://www.redfin.com/tours/checkout/contact?listingId=209901519&date=undefined&inquirySource=589&agentId=50490&epc=undefined&isRequestingForPartner=true
+//  Testing: https://www.redfin.com/tours/checkout/contact?listingId=209901519&date=undefined&inquirySource=589&agentId=50490&epc=undefined&isRequestingForPartner=true
 {
   "original_url": "https://www.redfin.com/tours/checkout/contact?listingId=209901519&date=undefined&inquirySource=589&agentId=50490&epc=undefined&isRequestingForPartner=true",
   "normalized_url": "https://www.redfin.com/tours/checkout/contact",
