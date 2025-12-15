@@ -43,7 +43,7 @@ def run(url: str) -> URLResolutionResult:
     print(json.dumps(asdict(result), indent=2, default=str))
     return result
 
-res = run("https://www.redfin.com")
-run("https://www.redfin.com/city/245/NY/Albany/newest-listings")
-run("https://www.redfin.com/mortgage-get-pre-approved?context=86&location_id=35948&location_type=2&spex_v=1")
-run("https://www.redfin.com/tours/checkout/contact?listingId=209901519&date=undefined&inquirySource=589&agentId=50490&epc=undefined&isRequestingForPartner=true")
+# res = run("https://www.redfin.com")
+# run("https://www.redfin.com/city/245/NY/Albany/newest-listings")
+# run("https://www.redfin.com/mortgage-get-pre-approved?context=86&location_id=35948&location_type=2&spex_v=1")
+# run("https://www.redfin.com/tours/checkout/contact?listingId=209901519&date=undefined&inquirySource=589&agentId=50490&epc=undefined&isRequestingForPartner=true")

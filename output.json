@@ -1,0 +1,115 @@
+
+ Testing: https://www.redfin.com
+{
+  "original_url": "https://www.redfin.com",
+  "normalized_url": "https://www.redfin.com/",
+  "decoded_url": "",
+  "redirect_chain": [
+    "https://www.redfin.com/"
+  ],
+  "final_url": "https://ratelimited.redfin.com/",
+  "status_code": 429,
+  "domain": "ratelimited.redfin.com",
+  "is_internal": true,
+  "classification": "UNKNOWN",
+  "canonical": {
+    "domain": "redfin.com",
+    "intent": "unknown",
+    "location": null,
+    "features": []
+  },
+  "errors": []
+}
+
+ Testing: https://www.redfin.com/houses-near-me
+{
+  "original_url": "https://www.redfin.com/houses-near-me",
+  "normalized_url": "https://www.redfin.com/houses-near-me",
+  "decoded_url": "/houses-near-me",
+  "redirect_chain": [
+    "https://www.redfin.com/houses-near-me"
+  ],
+  "final_url": "https://ratelimited.redfin.com/",
+  "status_code": 429,
+  "domain": "ratelimited.redfin.com",
+  "is_internal": true,
+  "classification": "SEARCH_LANDING",
+  "canonical": {
+    "domain": "redfin.com",
+    "intent": "search",
+    "location": null,
+    "features": []
+  },
+  "errors": []
+}
+
+ Testing: https://www.redfin.com/city/245/NY/Albany/newest-listings
+{
+  "original_url": "https://www.redfin.com/city/245/NY/Albany/newest-listings",
+  "normalized_url": "https://www.redfin.com/city/245/NY/Albany/newest-listings",
+  "decoded_url": "/city/245/NY/Albany/newest-listings",
+  "redirect_chain": [
+    "https://www.redfin.com/city/245/NY/Albany/newest-listings"
+  ],
+  "final_url": "https://ratelimited.redfin.com/",
+  "status_code": 429,
+  "domain": "ratelimited.redfin.com",
+  "is_internal": true,
+  "classification": "CITY_PAGE",
+  "canonical": {
+    "domain": "redfin.com",
+    "intent": "search",
+    "location": {
+      "type": "city",
+      "id": "245",
+      "state": "ny",
+      "name": "albany"
+    },
+    "features": []
+  },
+  "errors": []
+}
+
+ Testing: https://www.redfin.com/mortgage-get-pre-approved?context=86&location_id=35948&location_type=2&spex_v=1
+{
+  "original_url": "https://www.redfin.com/mortgage-get-pre-approved?context=86&location_id=35948&location_type=2&spex_v=1",
+  "normalized_url": "https://www.redfin.com/mortgage-get-pre-approved",
+  "decoded_url": "/mortgage-get-pre-approved",
+  "redirect_chain": [
+    "https://www.redfin.com/mortgage-get-pre-approved"
+  ],
+  "final_url": "https://ratelimited.redfin.com/",
+  "status_code": 429,
+  "domain": "ratelimited.redfin.com",
+  "is_internal": true,
+  "classification": "MORTGAGE_FUNNEL",
+  "canonical": {
+    "domain": "redfin.com",
+    "intent": "mortgage",
+    "location": null,
+    "features": []
+  },
+  "errors": []
+}
+
+ Testing: https://www.redfin.com/tours/checkout/contact?listingId=209901519&date=undefined&inquirySource=589&agentId=50490&epc=undefined&isRequestingForPartner=true
+{
+  "original_url": "https://www.redfin.com/tours/checkout/contact?listingId=209901519&date=undefined&inquirySource=589&agentId=50490&epc=undefined&isRequestingForPartner=true",
+  "normalized_url": "https://www.redfin.com/tours/checkout/contact",
+  "decoded_url": "/tours/checkout/contact",
+  "redirect_chain": [
+    "https://www.redfin.com/tours/checkout/contact"
+  ],
+  "final_url": "https://ratelimited.redfin.com/",
+  "status_code": 429,
+  "domain": "ratelimited.redfin.com",
+  "is_internal": true,
+  "classification": "CHECKOUT_FLOW",
+  "canonical": {
+    "domain": "redfin.com",
+    "intent": "checkout",
+    "location": null,
+    "features": []
+  },
+  "errors": []
+}
