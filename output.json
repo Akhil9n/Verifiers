@@ -1,5 +1,5 @@
 
-//  Testing: https://www.redfin.com
+ Testing: https://www.redfin.com
 {
   "original_url": "https://www.redfin.com",
   "normalized_url": "https://www.redfin.com/",
@@ -15,13 +15,15 @@
   "canonical": {
     "domain": "redfin.com",
     "intent": "unknown",
+    "entity": null,
     "location": null,
-    "features": []
+    "features": [],
+    "filters": {}
   },
   "errors": []
 }
 
-//  Testing: https://www.redfin.com/houses-near-me
+ Testing: https://www.redfin.com/houses-near-me
 {
   "original_url": "https://www.redfin.com/houses-near-me",
   "normalized_url": "https://www.redfin.com/houses-near-me",
@@ -37,13 +39,15 @@
   "canonical": {
     "domain": "redfin.com",
     "intent": "search",
+    "entity": null,
     "location": null,
-    "features": []
+    "features": [],
+    "filters": {}
   },
   "errors": []
 }
 
-//  Testing: https://www.redfin.com/city/245/NY/Albany/newest-listings
+ Testing: https://www.redfin.com/city/245/NY/Albany/newest-listings
 {
   "original_url": "https://www.redfin.com/city/245/NY/Albany/newest-listings",
   "normalized_url": "https://www.redfin.com/city/245/NY/Albany/newest-listings",
@@ -59,18 +63,20 @@
   "canonical": {
     "domain": "redfin.com",
     "intent": "search",
+    "entity": null,
     "location": {
       "type": "city",
       "id": "245",
       "state": "ny",
       "name": "albany"
     },
-    "features": []
+    "features": [],
+    "filters": {}
   },
   "errors": []
 }
 
-//  Testing: https://www.redfin.com/mortgage-get-pre-approved?context=86&location_id=35948&location_type=2&spex_v=1
+ Testing: https://www.redfin.com/mortgage-get-pre-approved?context=86&location_id=35948&location_type=2&spex_v=1
 {
   "original_url": "https://www.redfin.com/mortgage-get-pre-approved?context=86&location_id=35948&location_type=2&spex_v=1",
   "normalized_url": "https://www.redfin.com/mortgage-get-pre-approved",
@@ -86,13 +92,69 @@
   "canonical": {
     "domain": "redfin.com",
     "intent": "mortgage",
+    "entity": null,
     "location": null,
-    "features": []
+    "features": [],
+    "filters": {}
   },
   "errors": []
 }
 
-//  Testing: https://www.redfin.com/tours/checkout/contact?listingId=209901519&date=undefined&inquirySource=589&agentId=50490&epc=undefined&isRequestingForPartner=true
+ Testing: https://www.redfin.com/sell-a-home/seller-consultation/28493273
+{
+  "original_url": "https://www.redfin.com/sell-a-home/seller-consultation/28493273",
+  "normalized_url": "https://www.redfin.com/sell-a-home/seller-consultation/28493273",
+  "decoded_url": "/sell-a-home/seller-consultation/28493273",
+  "redirect_chain": [
+    "https://www.redfin.com/sell-a-home/seller-consultation/28493273"
+  ],
+  "final_url": "https://ratelimited.redfin.com/",
+  "status_code": 429,
+  "domain": "ratelimited.redfin.com",
+  "is_internal": true,
+  "classification": "UNKNOWN",
+  "canonical": {
+    "domain": "redfin.com",
+    "intent": "seller_funnel",
+    "entity": {
+      "type": "property",
+      "id": "28493273"
+    },
+    "location": null,
+    "features": [],
+    "filters": {}
+  },
+  "errors": []
+}
+
+ Testing: https://www.redfin.com/CA/Ceres/1034-Bliss-Rd-95307/home/19877189#property-history
+{
+  "original_url": "https://www.redfin.com/CA/Ceres/1034-Bliss-Rd-95307/home/19877189#property-history",
+  "normalized_url": "https://www.redfin.com/CA/Ceres/1034-Bliss-Rd-95307/home/19877189",
+  "decoded_url": "/CA/Ceres/1034-Bliss-Rd-95307/home/19877189",
+  "redirect_chain": [
+    "https://www.redfin.com/CA/Ceres/1034-Bliss-Rd-95307/home/19877189"
+  ],
+  "final_url": "https://ratelimited.redfin.com/",
+  "status_code": 429,
+  "domain": "ratelimited.redfin.com",
+  "is_internal": true,
+  "classification": "UNKNOWN",
+  "canonical": {
+    "domain": "redfin.com",
+    "intent": "listing",
+    "entity": {
+      "type": "property",
+      "id": "19877189"
+    },
+    "location": null,
+    "features": [],
+    "filters": {}
+  },
+  "errors": []
+}
+
+ Testing: https://www.redfin.com/tours/checkout/contact?listingId=209901519&date=undefined&inquirySource=589&agentId=50490&epc=undefined&isRequestingForPartner=true
 {
   "original_url": "https://www.redfin.com/tours/checkout/contact?listingId=209901519&date=undefined&inquirySource=589&agentId=50490&epc=undefined&isRequestingForPartner=true",
   "normalized_url": "https://www.redfin.com/tours/checkout/contact",
@@ -108,8 +170,51 @@
   "canonical": {
     "domain": "redfin.com",
     "intent": "checkout",
+    "entity": null,
     "location": null,
-    "features": []
+    "features": [],
+    "filters": {}
+  },
+  "errors": []
+}
+
+ Testing: https://www.redfin.com/city/3258/CA/Ceres/rentals/filter/property-type=condo+multifamily,min-beds=2,max-beds=3,min-baths=2
+{
+  "original_url": "https://www.redfin.com/city/3258/CA/Ceres/rentals/filter/property-type=condo+multifamily,min-beds=2,max-beds=3,min-baths=2",
+  "normalized_url": "https://www.redfin.com/city/3258/CA/Ceres/rentals/filter/property-type=condo+multifamily,min-beds=2,max-beds=3,min-baths=2",
+  "decoded_url": "/city/3258/CA/Ceres/rentals/filter/property-type=condo+multifamily,min-beds=2,max-beds=3,min-baths=2",
+  "redirect_chain": [
+    "https://www.redfin.com/city/3258/CA/Ceres/rentals/filter/property-type=condo+multifamily,min-beds=2,max-beds=3,min-baths=2"
+  ],
+  "final_url": "https://ratelimited.redfin.com/",
+  "status_code": 429,
+  "domain": "ratelimited.redfin.com",
+  "is_internal": true,
+  "classification": "CITY_PAGE",
+  "canonical": {
+    "domain": "redfin.com",
+    "intent": "search",
+    "entity": null,
+    "location": {
+      "type": "city",
+      "id": "3258",
+      "state": "ca",
+      "name": "ceres"
+    },
+    "features": [],
+    "filters": {
+      "property_type": [
+        "condo",
+        "multifamily"
+      ],
+      "beds": {
+        "min": 2,
+        "max": 3
+      },
+      "baths": {
+        "min": 2
+      }
+    }
   },
   "errors": []
 }
