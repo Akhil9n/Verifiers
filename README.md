@@ -97,24 +97,23 @@ Each URL is transformed into a **canonical semantic object**, for example:
   }
 }
 
-### Key Structure Properties
-- **Order-independent**: Structure remains valid regardless of parameter sequence.
-- **Noise-tolerant**: Handles irrelevant or extraneous data without breaking.
-- **Comparable**: Enables direct side-by-side evaluation of outputs.
-- **Explainable**: Provides clear reasoning for matches or failures.
+## Key Structure Properties
+Order-independent: Structure remains valid regardless of parameter sequence.
+Noise-tolerant: Handles irrelevant or extraneous data without breaking.
+Comparable: Enables direct side-by-side evaluation of outputs.
+Explainable: Provides clear reasoning for matches or failures.
 
-### Parameter Extraction (Key Advantage)
+## Parameter Extraction (Key Advantage)
 Filters and constraints are automatically extracted from multiple sources:
+Query parameters (e.g., ?min-beds=2)
+Path-based filter DSLs (e.g., /filter/min-beds=2,max-beds=3)
+Boolean flags (e.g., cats-allowed, has-deal)
 
-- Query parameters (e.g., `?min-beds=2`)
-- Path-based filter DSLs (e.g., `/filter/min-beds=2,max-beds=3`)
-- Boolean flags (e.g., `cats-allowed`, `has-deal`)
-
-This extraction powers precise failure detection, such as:
-- Agent forgot a filter (e.g., `min-beds`)
-- Agent used wrong range (e.g., `max-price`)
-- Agent used wrong entity (e.g., `city` vs `property`)
-- Agent chose the wrong intent entirely
+## This extraction powers precise failure detection, such as:
+Agent forgot a filter (e.g., min-beds)
+Agent used wrong range (e.g., max-price)
+Agent used wrong entity (e.g., city vs property)
+Agent chose the wrong intent entirely
 
 ### Explainable Failure Analysis
 Instead of vague feedback like “The URLs do not match,” this approach delivers specific diagnostics:
