@@ -1,6 +1,6 @@
 # URL Intent & Canonicalization Framework
 
-Instead of directly comparing two URLs as strings, it **decodes each URL into structured semantic information**, extracts intent and parameters, and then compares those structures. This makes it possible to **pinpoint exactly where an AI agent failed**, *what it misunderstood*, and *what information was missing or incorrect*.
+The AI agent URLs and the Ground Truth URLs which arrive-Instead of directly comparing two URLs as strings, it **decodes each URL into structured semantic information**, extracts intent and parameters, and then compares those structures. This makes it possible to **pinpoint exactly where an AI agent failed**, *what it misunderstood*, and *what information was missing or incorrect*.
 
 ---
 
